@@ -1,0 +1,13 @@
+services:
+
+  api:
+    build: ./server
+    restart: always
+    ports:
+      - 8080:80
+
+  ui:
+    build: ./client
+    restart: always
+    ports:
+      - 3000:3000
